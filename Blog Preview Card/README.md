@@ -15,11 +15,10 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - This is one of the beginner challenges available on the Frontend Mentor website. In this challenge, you build a Blog Preview Card.
 
 ### Screenshot
-
-![] [Blog Preview Card\design\Desktop View.png]
+![Desktop View](<design/Desktop View.png>)
 - This is the screenshot of the Desktop View
 
-![] [Blog Preview Card\design\Mobile View.png]
+![Mobile View](<design/Mobile View.png>)
 - This is the screenshot of the Mobile View
 
 ## My process
