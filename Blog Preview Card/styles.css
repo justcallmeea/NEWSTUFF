@@ -1,0 +1,200 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: var(--White);
+    width: 340px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--Gray950);
+    box-shadow: 5px 5px 1px 1px hsla(0, 0%, 7%, 0.9);
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+    height: 200px;
+    border-radius: 10px;
+}
+.cardpic{
+    width: 100%;
+    border-radius: 10px;
+}
+    
+.about{
+ margin-left: 17px;   
+}
+.learning{
+    background-color: var(--Yellow);
+    border: none;
+    color: var(--Gray950);
+    padding: 5px 10px;
+    font-weight: 800;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.published{
+    margin-bottom: 10px;
+    color: var(--Gray950);
+    font-weight: 500;
+}
+.text{
+    margin-left: 17px;
+}
+.heading{
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 1.35rem;
+    color: var(--Gray950);
+}
+.heading:hover{
+    cursor: pointer;
+}
+.heading:active{
+    cursor: pointer;
+    color: var(--Yellow);
+}
+.subheading{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--Gray500);
+    margin-bottom: 10px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pfp{
+    transform: scale(0.5);
+}
+.pfname{
+    font-weight: 800;
+    color: var(--Gray950);
+}
+.attribution{
+    margin-top: 15px;
+}
+@media screen and (max-width: 375px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: "Figtree", sans-serif;
+        background-color: var(--Yellow);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        background-color: var(--White);
+        width: 320px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid var(--Gray950);
+        box-shadow: 5px 5px 1px 1px hsla(0, 0%, 7%, 0.9);
+    }
+    .pic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        margin: 20px auto;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .cardpic{
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+        
+    .about{
+     margin-left: 25px;   
+    }
+    .learning{
+        background-color: var(--Yellow);
+        border: none;
+        color: var(--Gray950);
+        padding: 5px 10px;
+        font-weight: 800;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .published{
+        margin-bottom: 10px;
+        color: var(--Gray950);
+        font-weight: 500;
+    }
+    .text{
+        margin-left: 25px;
+    }
+    .heading{
+        margin-bottom: 10px;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: var(--Gray950);
+    }
+    .heading:hover{
+        cursor: pointer;
+    }
+    .heading:active{
+        cursor: pointer;
+        color: var(--Yellow);
+    }
+    .subheading{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        color: var(--Gray500);
+        margin-bottom: 10px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .pfp{
+        transform: scale(0.5);
+    }
+    .pfname{
+        font-weight: 800;
+        color: var(--Gray950);
+    }
+    .attribution{
+        margin-top: 15px;
+    }
+}
