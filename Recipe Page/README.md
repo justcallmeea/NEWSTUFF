@@ -16,10 +16,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![Desktop View](<Recipe Page/design/mydesktopview.png>)
+![Desktop View] (design/mydesktopview.png)
 - This is the Desktop View
 
-![Mobile View](<Recipe Page/design/mymobileview.png>)
+![Mobile View] (design/mymobileview.png)
 - This is the Mobile View
 
 ## My process
