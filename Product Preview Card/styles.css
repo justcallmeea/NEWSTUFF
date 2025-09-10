@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+:root{
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: calc(100vh - 0.1px);
+    background-color: var(--Cream);
+}
+.container{
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 45.2rem;
+    width: 60.2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.product-picture{
+    width: 100%;
+}
+.desktop-pic{
+    width: 100%;
+}
+.mobile-pic{
+    display: none;
+}
+.product-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3.6rem 3.2rem;
+}
+.product-type{
+    font-family: Montserrat, Arial;
+    color: var(--Grey);
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+.product-name{
+    font-size: 1.8rem;
+    font-family: Fraunces, Arial;
+    line-height: 1;
+}
+.product-description{
+    font-family: Montserrat, Arial;
+    font-size: 1.4rem;
+    color: var(--Grey);
+    line-height: 1.5;
+}
+.product-price{
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.current-price{
+    font-family: Fraunces, Arial;
+    font-size: 1.6rem;
+    color: var(--Green500);
+}
+.old-price{
+    font-family: Montserrat, Arial;
+    text-decoration: line-through;
+    color: var(--Grey);
+    font-size: 1.4rem;
+}
+.add-to-cart{
+    color: var(--White);
+    background-color: var(--Green500);
+    border: none;
+    border-radius: 1rem;
+    font-family: Montserrat, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem auto;
+    gap: 1.3rem;
+    margin-top: 1.6rem;
+    transition: background-color 0.5s;
+}
+button:active{
+    cursor: pointer;
+    background-color: var(--Green700);
+}
+.attribution{
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:40.5rem) {
+    .container{
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+    height: 75.5rem;
+    width: 35.3rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 8.0rem 1.3rem 17.2rem;
+    }
+
+    .product-picture{
+    width: 100%;
+    height: 100%;
+    }
+
+    .desktop-pic{
+    display: none;
+    }
+
+    .mobile-pic{
+        display: inherit;
+    width: 100%;
+    height: 100%;
+    }
+
+    .product-type{
+    font-family: Montserrat, Arial;
+    color: var(--Grey);
+    letter-spacing: 0.8rem;
+    font-size: 1rem;
+    }
+
+    .product-name{
+    font-size: 1.6rem;
+    font-family: Fraunces, Arial;
+    line-height: 1;
+    }
+
+    .product-description{
+    font-family: Montserrat, Arial;
+    font-size: 1.4rem;
+    color: var(--Grey);
+    line-height: 1.5;
+    }
+
+    .product-price{
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .current-price{
+    font-family: Fraunces, Arial;
+    font-size: 1.4rem;
+    color: var(--Green500);
+    }
+
+    .old-price{
+    font-family: Montserrat, Arial;
+    text-decoration: line-through;
+    color: var(--Grey);
+    font-size: 1.4rem;
+    }
+}
