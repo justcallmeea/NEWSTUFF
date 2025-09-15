@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Barlow;
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+:root{
+    font-size: 62.5%;
+    --Purple50: hsl(260, 100%, 95%);
+    --Purple300: hsl(264, 82%, 80%);
+    --Purple500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey100: hsl(214, 17%, 92%);
+    --Grey200: hsl(0, 0%, 81%);
+    --Grey400: hsl(224, 10%, 45%);
+    --Grey500: hsl(217, 19%, 35%);
+    --Darkblue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--White);
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 0.1px);
+    font-size: 1.3rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 7.2rem 2.7rem;
+    gap: 3.2rem;
+}
+.daniel-card, .jonathan-card, .jeanette-card, .patrick-card, .kira-card{
+    border-radius: 1rem;
+    display: grid;
+    row-gap: 2rem;
+    padding: 3.2rem;
+    box-shadow: 1rem 1rem 7rem rgba(0, 0, 0, 0.2);
+}
+.testimony-author{
+    display: grid;
+    grid-template-columns: 3.4rem 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+.author-pic{
+    height: 3.4rem ;
+    width: 3.4rem;
+    border-radius: 1.7rem;
+}
+.author-details{
+    display: grid;
+    row-gap: 0.3rem;
+}
+.testimony-message{
+    display: grid;
+    row-gap: 2rem;
+}
+h3{
+    font-weight: 400;
+}
+/* Daniel card styles */
+.daniel-card{
+    background-color: var(--Purple500);
+}
+.daniel-card h3, .daniel-card h2{
+    color: var(--White);
+}
+.daniel-card p{
+    color: var(--Grey200);
+}
+.daniel-card .author-pic{
+    border: 1px solid var(--Purple300);
+}
+/* Jonathan card styles */
+.jonathan-card{
+    background-color: var(--Grey500);
+}
+.jonathan-card h3, .jonathan-card h2, .jonathan-card p{
+    color: var(--White);
+}
+.jonathan-card .author-details p{
+    color: var(--Grey200);
+}
+/*Jeanette card styles */
+.jeanette-card{
+    background-color: var(--White);
+    color: var(--Darkblue);
+}
+/* Patrick card styles */
+.patrick-card{
+    background-color: var(--Darkblue);
+}
+.patrick-card .author-pic{
+    border: 1px solid var(--Purple500);
+}
+.patrick-card .testimony-author{
+    color: var(--White);
+}
+.patrick-card .testimony-message{
+    color: var(--Grey200);
+}
+h2{
+    font-size: 2.0rem;
+}
+
+/* Kira card styles */
+.kira-card{
+    background-color: var(--White);
+    color: var(--Darkblue);
+}
+.kira-card .author-details p{
+    color: var(--Grey200);
+}
+.quotation-pic {
+    display: none;
+}
+
+@media screen and (min-width: 48rem){
+    .daniel-card, .jonathan-card, .jeanette-card, .patrick-card, .kira-card{
+        max-width: 63rem;
+}
+}
+
+@media screen and (min-width: 77rem){
+    .daniel-card{
+        grid-area: daniel;
+        max-width: 54rem;
+    }
+    .jonathan-card{
+        grid-area: jonathan;
+        max-width: 25.5rem;
+    }
+    .jeanette-card{
+        grid-area: jeanette;
+        max-width: 25.5rem;
+    }
+    .patrick-card{
+        grid-area: patrick;
+        max-width: 54rem;
+    }
+    .kira-card{
+        grid-area: kira;
+        place-content: start;
+        max-width: 25.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira"
+        ;
+        padding: 22.8rem  16rem 21.8rem;
+    }
+    .daniel-card{
+        position: relative;
+    }
+    .quotation-pic{
+        position: absolute;
+        top: 0rem;
+        right: 6rem;
+        display: inherit;
+    }
+    .daniel-card h2{
+        z-index: 1;
+    }
+}

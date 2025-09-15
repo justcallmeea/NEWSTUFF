@@ -1,6 +1,6 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -12,13 +12,13 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [Author](#author)
 
 ## Overview
-- This is one of the beginner challenges available on the Frontend Mentor website. In this challenge, I attempted the "Four Card Feature Section"
+- This is one of the beginner challenges available on the Frontend Mentor website. In this challenge, I attempted the "Testimonial Grid Section"
 
 ### Screenshot
-![Desktop View](<design/Desktop screenshot.png>)
+![Desktop View](<design/Desktop View.jpeg>)
 - This is the Desktop View
 
-![Mobile View](<design/Mobile screenshot.jpeg>)
+![Mobile View](<design/Mobile View.jpeg>)
 - This is the Mobile View
 
 ## My process
