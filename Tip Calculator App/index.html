@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <script defer src="script.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="logo-wrapper">
+      <img class="logo" src="images/logo.svg" alt="calculator logo" />
+    </div>
+    <main class="container">
+      <div class="bill">
+        <p class="bill__name">Bill</p>
+        <div class="bill__input-wrapper">
+          <span class="bill__dollar-sign"
+            ><img src="images/icon-dollar.svg" alt="Image of a dollar-sign"
+          /></span>
+          <input class="bill__input" type="number" placeholder="0" />
+        </div>
+      </div>
+      <div class="select-tip">
+        <p class="select-tip__name">Select Tip %</p>
+        <button class="select-tip__button five" value="0.05">5%</button>
+        <button class="select-tip__button ten" value="0.10">10%</button>
+        <button class="select-tip__button fifteen" value="0.15">
+          15%
+        </button>
+        <button class="select-tip__button twenty-five" value="0.25">25%</button>
+        <button class="select-tip__button fifty" value="0.50">50%</button>
+        <input type="number" class="select-tip__input" placeholder="Custom" />
+      </div>
+      <div class="no-of-people">
+        <p class="no-of-people__name">Number of People</p>
+        <p class="no-of-people__error hidden">Can't be zero</p>
+        <div class="no-of-people__input-wrapper">
+          <span class="no-of-people__icon"
+            ><img src="images/icon-person.svg" alt="Image of a person icon"
+          /></span>
+        </div>
+        <input class="no-of-people__input" type="number" placeholder="0" />
+      </div>
+      <div class="results">
+        <div class="results__tip">
+          <div class="results__tip top">Tip Amount</div>
+          <div class="results__tip bottom">/ person</div>
+          <div class="results__tip-figure">$0</div>
+        </div>
+        <div class="results__total">
+          <div class="results__total top">Total</div>
+          <div class="results__total bottom">/ person</div>
+          <div class="results__total-figure">$0</div>
+        </div>
+        <button class="results__reset-button">RESET</button>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
