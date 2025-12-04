@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <!-- Rating state start -->
+        <div class="card__img-wrapper">
+          <img
+            class="card__img"
+            src="images/icon-star.svg"
+            alt="Image of a star icon"
+          />
+        </div>
+        <div class="card__heading">
+          <p>How did we do?</p>
+        </div>
+        <div class="card__text">
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="card__btnsection">
+          <div class="card__buttons">
+            <button class="button card__button--one" value="1">1</button>
+            <button class="button card__button--two" value="2">2</button>
+            <button class="button card__button--three" value="3">3</button>
+            <button class="button card__button--four" value="4">4</button>
+            <button class="button card__button--five" value="5">5</button>
+          </div>
+          <div class="card__submit">
+            <button class="card__button--submit">SUBMIT</button>
+            <div class="error-message hidden">Please select a number!</div>
+          </div>
+        </div>
+        <!-- Rating state end -->
+      </div>
+      <div class="thank-you-card hidden">
+        <div class="thank-you-card__img-wrapper">
+          <img
+            class="thank-you-card__img"
+            src="images/illustration-thank-you.svg"
+            alt="Image of a phone and a card"
+          />
+        </div>
+        <div class="thank-you-card__selection">
+          <p>
+            You selected
+            <span class="thank-you-card__rating">4</span>
+            out of 5
+          </p>
+        </div>
+        <p class="thank-you-card__heading">Thank you!</p>
+        <div class="thank-you-card__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

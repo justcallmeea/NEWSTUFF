@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Orange500: hsl(25, 97%, 53%);
+  --White: hsl(0, 100%, 100%);
+  --Grey500: hsl(217, 12%, 63%);
+  --Grey900: hsl(213, 19%, 18%);
+  --btnbgcolor: hsla(217, 12%, 63%, 0.2);
+  --Grey950: hsl(216, 12%, 8%);
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  color: var(--Grey500);
+}
+
+body {
+  background-color: var(--Grey950);
+  display: grid;
+  min-height: calc(100vh - 0.1px);
+  place-content: center;
+}
+.card {
+  padding: 2.4rem;
+  background-color: var(--Grey900);
+  display: grid;
+  margin: auto 2.4rem;
+  border-radius: 2rem;
+  row-gap: 2.4rem;
+  max-width: 32.7rem;
+}
+.card__img {
+  background-color: var(--btnbgcolor);
+  padding: 1.3rem;
+  border-radius: 6rem;
+}
+.card__heading p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--White);
+}
+.card__text p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.card__btnsection {
+  display: grid;
+  row-gap: 2.5rem;
+}
+.card__buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+}
+.card__buttons button {
+  background-color: var(--btnbgcolor);
+  border: none;
+  font-weight: bold;
+  padding: 1.1rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.card__buttons button:hover {
+  background-color: var(--Orange500);
+  color: var(--Grey950);
+}
+.card__submit {
+  width: 100%;
+}
+.card__button--submit {
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--Orange500);
+  color: var(--Grey950);
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card__button--submit:active {
+  background-color: var(--White);
+}
+button.selected {
+  background-color: var(--White);
+  color: var(--Grey950);
+}
+
+.thank-you-card {
+  text-align: center;
+  padding: 2.4rem;
+  background-color: var(--Grey900);
+  display: grid;
+  margin: auto 2.4rem;
+  border-radius: 2rem;
+  row-gap: 2rem;
+  max-width: 32.7rem;
+}
+
+.thank-you-card__selection p,
+.thank-you-card__rating {
+  color: var(--Orange500);
+  font-size: 1.5rem;
+}
+.thank-you-card__selection p {
+  background-color: var(--btnbgcolor);
+  padding: 0.7rem;
+  display: inline;
+  border-radius: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.thank-you-card__heading {
+  font-size: 2rem;
+  color: var(--White);
+}
+.thank-you-card__text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--Grey500);
+}
+.error-message{
+  margin-top: 1rem;
+  color: var(--White);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.hidden {
+  display: none;
+}
