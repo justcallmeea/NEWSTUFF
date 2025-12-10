@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Purple100: hsl(275, 100%, 97%);
+  --Purple600: hsl(292, 16%, 49%);
+  --Purple950: hsl(292, 42%, 14%);
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: calc(100vh - 0.1px);
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 5fr;
+  position: relative;
+  background-color: var(--Purple100);
+}
+.background-img {
+  width: 100%;
+}
+.background-img img {
+  width: 100%;
+}
+.container {
+  justify-self: center;
+  background-color: var(--White);
+  margin: 14rem 2.4rem;
+  position: absolute;
+  z-index: 1;
+  padding: 3rem 2.4rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.5rem;
+}
+.card__head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 2rem;
+}
+.card__head img {
+  width: 70%;
+}
+.card__title {
+  font-size: 3.5rem;
+}
+.card__body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card__questions {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+.card__question {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 4.8rem;
+  place-items: center;
+}
+.card__question p {
+  color: var(--Purple950);
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-self: start;
+}
+.card__question p:hover {
+  cursor: pointer;
+  color: var(--Purple600);
+}
+.card__answer p {
+  color: var(--Purple600);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+button {
+  background: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+hr {
+  color: var(--Purple100);
+  width: 100%;
+  justify-self: center;
+  border: none;
+  border-top: 1px solid;
+  margin: 2.4rem auto;
+}
+.desktop-bg {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-bg {
+    display: none;
+  }
+  .desktop-bg {
+    display: inherit;
+  }
+  .container {
+    width: 60rem;
+    margin-top: 20rem;
+  }
+}
